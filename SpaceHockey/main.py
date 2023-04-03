@@ -145,8 +145,8 @@ def red_movement(keys_pressed, red):
 
 def main():
     # The first two numbers in yellow and red indicate starting position. For ball we start from middle of window
-    yellow = pygame.Rect(100, 300, SHIP_WIDTH, SHIP_HEIGHT)
-    red = pygame.Rect(700, 300, SHIP_WIDTH, SHIP_HEIGHT)
+    yellow = pygame.Rect(100, 250, SHIP_WIDTH, SHIP_HEIGHT)
+    red = pygame.Rect(700, 250, SHIP_WIDTH, SHIP_HEIGHT)
     ball = Ball(WIDTH // 2, HEIGHT // 2, BALL_RADIUS)
 
     yellow_score = 0
