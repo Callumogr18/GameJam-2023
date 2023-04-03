@@ -26,7 +26,7 @@ Music:
 
 Note: Music has some bugs so allow time for it to settle when turning it on/off
 
-# Playing the game
+# Playing the game
 If you want to play this game I recommend following this process...
 
 1. Install VScode on your machine
