@@ -35,7 +35,7 @@ FPS = 60
 
 
 class Ball():
-    MAX_VEL = 5
+    MAX_VEL = 6
     COLOUR = PINK
 
     # The constructor method, which sets the initial values of the ball's properties
