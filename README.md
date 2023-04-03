@@ -35,4 +35,4 @@ If you want to play my game follow this process...
 3. Get a python interpreter ready in order to run the game
 4. Have fun and ENJOY!
 
-Or you can just download the release source code zip (my personnel recommendation), this has everything bundles nicely together ready for you to play with!
+Or you can just download the release source code zip (my personnel recommendation), this has everything bundled nicely together ready for you to play with!
