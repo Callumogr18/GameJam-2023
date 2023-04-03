@@ -84,24 +84,29 @@ def handle_collision(ball, yellow, red):
         # tells us where the ship is essentially
         if ball.y >= yellow.y and ball.y <= yellow.y + yellow.height:
             if ball.x - ball.radius <= yellow.x + yellow.width:
-                ball.x_vel *= -1
-
-                middle_y = yellow.y + yellow.height / 2
-                difference_y = middle_y - ball.y
-                reduction_factor = (yellow.height / 2) / ball.MAX_VEL
-                y_vel = difference_y / reduction_factor
-                ball.y_vel = -1 * y_vel
-                # EDITOR'S NOTE: Maybe create function for math
+                math_yellow(ball, yellow)
     else:
         if ball.y >= red.y and ball.y <= red.y + red.height:
             if ball.x + ball.radius >= red.x:
-                ball.x_vel *= -1
+                math_red(ball, red)
 
-                middle_y = red.y + red.height / 2
-                difference_y = middle_y - ball.y
-                reduction_factor = (red.height / 2) / ball.MAX_VEL
-                y_vel = difference_y / reduction_factor
-                ball.y_vel = -1 * y_vel
+
+def math_yellow(ball, yellow):
+    ball.x_vel *= -1
+    middle_y = yellow.y + yellow.height / 2
+    difference_y = middle_y - ball.y
+    reduction_factor = (yellow.height / 2) / ball.MAX_VEL
+    y_vel = difference_y / reduction_factor
+    ball.y_vel = -1 * y_vel
+
+
+def math_red(ball, red):
+    ball.x_vel *= -1
+    middle_y = red.y + red.height / 2
+    difference_y = middle_y - ball.y
+    reduction_factor = (red.height / 2) / ball.MAX_VEL
+    y_vel = difference_y / reduction_factor
+    ball.y_vel = -1 * y_vel
 
 
 def draw_window(red, yellow, ball, red_score, yellow_score):
