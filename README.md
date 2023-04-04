@@ -24,15 +24,18 @@ Music:
 
 - Press m (on/off)
 
-Note: Music has some bugs so allow time for it to settle when turning it on/off
+Note: Music cannot be turned on/off if ships are moving, this is because other functions are being called on and the music handler cannot be reached by the interpreter.
 
 # Playing the game
 
 If you want to play my game follow this process...
+Download the source code zip in releases, this has everything bundled nicely together ready for you to play with.
+
+Or...
 
 1. Install VScode on your machine
 2. In the blank workspace, paste the link of this repository into the bar at the top of the screen
 3. Get a python interpreter ready in order to run the game
 4. Have fun and ENJOY!
 
-Or you can just download the release source code zip (my personnel recommendation), this has everything bundled nicely together ready for you to play with!
+Note: Ensure you have pygame installed on your machine
