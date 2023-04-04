@@ -24,7 +24,7 @@ Music:
 
 - Press m (on/off)
 
-Note: Music cannot be turned on/off if ships are moving, this is because other functions are being called on and the music handler cannot be reached by the interpreter.
+Note: Music cannot be turned on/off if ships are moving, this is because other functions are being called on and the music handler cannot be reached.
 
 # Playing the game
 
