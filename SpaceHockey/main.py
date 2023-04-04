@@ -65,23 +65,18 @@ class Ball():
 
 
 def handle_collision(ball, yellow, red):
-    #  If we are colliding with the bottom of the window, we are checking ball.y (Ball centre) and ball radius
-    #  If that is the case, we reverse the direction of the ball, (*= -1)
-    #  Aside: ball.y + ball.radius = Edge of ball (Key for collision detection)
+    """
+    If we are colliding with the bottom or top of the window, we are checking ball.y (Ball centre) and ball radius,
+    if greater, we reverse the direction of the ball, (*= -1)
+    Aside: ball.y + ball.radius = Edge of ball, we use ball.y instead of ball.x as we are checking for the 
+    vertical position of the ball
+    """
     if ball.y + ball.radius >= HEIGHT:
         ball.y_vel *= -1
-    # This is similar to above but checking for top ceiling
     elif ball.y - ball.radius <= 0:
         ball.y_vel *= -1
 
-    """
-    This is the complicated part...This is handling collisions with the yellow and red ship. I had to watch
-    multiple youtube videos trying to figure this one out.
-    Watch this if you're interested: https://www.youtube.com/watch?v=vVGTZlnnX3U&t=2052s (39:00 - 59:00)
-    """
     if ball.x_vel < 0:
-        #  If the y value of the ball is greater than y value of ship, but less than y value of ship + height of ship...
-        # tells us where the ship is essentially
         if ball.y >= yellow.y and ball.y <= yellow.y + yellow.height:
             if ball.x - ball.radius <= yellow.x + yellow.width:
                 math_yellow(ball, yellow)
@@ -92,6 +87,11 @@ def handle_collision(ball, yellow, red):
 
 
 def math_yellow(ball, yellow):
+    """
+    These two functions are complicated...This is handling collisions with the yellow and red ship,
+    I had to watch multiple youtube videos trying to figure this one out.
+    Watch this if you're interested: https://www.youtube.com/watch?v=vVGTZlnnX3U&t=2052s (39:00 - 59:00)
+    """
     ball.x_vel *= -1
     middle_y = yellow.y + yellow.height / 2
     difference_y = middle_y - ball.y
@@ -198,24 +198,6 @@ def main():
         elif ball.x > WIDTH:
             red_score += 1
             ball.reset()
-
-        # winning_score = 10
-        # if yellow_score == winning_score:
-        #    won = True
-        #    score_text = "Yellow Wins!"
-        # elif red_score == winning_score:
-        #    won = True
-        #    score_text = "Red Wins!"
-
-        #  if won:
-            # winner = FONT.render(score_text, 1, WHITE)
-            # WIN.blit(winner, WIDTH // 2 - winner.get_width() //
-            #         2, HEIGHT // 2 - winner.get_height() // 2)
-            # pygame.display.update()
-            #  pygame.time.delay(5000)
-            #  ball.reset()
-            # yellow_score = 0
-            # red_score = 0
 
     pygame.quit()
 
