@@ -12,6 +12,8 @@ WIDTH, HEIGHT = 900, 500
 VEL = 5
 BORDER = pygame.Rect(WIDTH/2, 0, 10, HEIGHT)
 BALL_RADIUS = 7
+WINNER_DISPLAY = 3000
+SCORE_RESET = 1000
 
 # Our images for the background, yellow and red spaceships
 BG = pygame.transform.scale(pygame.image.load(
@@ -123,6 +125,12 @@ def draw_window(red, yellow, ball, red_score, yellow_score):
     WIN.blit(red_scoreboard, (WIDTH * (3/4) -
              red_scoreboard.get_width()//2, 20))
     ball.draw(WIN)
+    # if yellow_score == 3:
+    #    winner_text = FONT.render("YELLOW WINS!", 1, WHITE)
+    #    WIN.blit(winner_text, (WIDTH//2 - winner_text.get_width()//2, HEIGHT//2))
+    # elif red_score == 3:
+    #    winner_text = FONT.render("RED WINS!", 1, WHITE)
+    #    WIN.blit(winner_text, (WIDTH//2 - winner_text.get_width()//2, HEIGHT//2))
     pygame.display.update()
 
 
