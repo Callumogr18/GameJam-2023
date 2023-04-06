@@ -17,11 +17,11 @@ SCORE_RESET = 1000
 
 # Our images for the background, yellow and red spaceships
 BG = pygame.transform.scale(pygame.image.load(
-    os.path.join("SpaceHockey", "assets", "space.png")), (WIDTH, HEIGHT))
+    os.path.join("assets", "space.png")), (WIDTH, HEIGHT))
 YELLOW_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(pygame.image.load(
-    os.path.join("SpaceHockey", "assets", "spaceship_yellow.png")), (SHIP_WIDTH, SHIP_HEIGHT)), 90)
+    os.path.join("assets", "spaceship_yellow.png")), (SHIP_WIDTH, SHIP_HEIGHT)), 90)
 RED_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(pygame.image.load(
-    os.path.join("SpaceHockey", "assets", "spaceship_red.png")), (SHIP_WIDTH, SHIP_HEIGHT)), 270)
+    os.path.join("assets", "spaceship_red.png")), (SHIP_WIDTH, SHIP_HEIGHT)), 270)
 
 #  Setting the display height, width for the pygame window and font type and size
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
