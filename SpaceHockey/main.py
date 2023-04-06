@@ -27,7 +27,7 @@ RED_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(pygame.image.load
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("AIR HOCKEY")
 FONT = pygame.font.SysFont("Comic Sans MS", 40)
-pygame.mixer.music.load("SpaceHockey/assets/Ove Melaa Supa Powa Loop B.mp3")
+pygame.mixer.music.load("assets/Ove Melaa Supa Powa Loop B.mp3")
 
 # Colours used: White, Black, pink. Also the FPS for the pygame clock
 WHITE = (255, 255, 255)
