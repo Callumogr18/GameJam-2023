@@ -1,6 +1,6 @@
 # GameJam-2023 (MTU Prog. & Guild Society)
 
-WELCOME TO MY GAMEJAM SUBMISSION...SpaceHockey, it is an adaptation of the popular tabletop sport AIR HOCKEY. I am honestly not the biggest fan of most tabletop games, so I thought to myself what do I enjoy, this led to me thinking about air hockey...a game I thoroughly enjoyed as a kid whenever I might get to go to an arcade, etc. In my version, you and an opponent battle it off to protect your planet's atmosphere from the BIG RED BOMB trying to enter it...each player can deflect the bomb back over the border towards the opponent's atmosphere to try and score a point. Pretty simple concept! (It is designed for 2 players, can be 1 if you want ;))
+WELCOME TO MY GAMEJAM SUBMISSION...SpaceHockey, it is an adaptation of the popular tabletop sport AIR HOCKEY. I am honestly not the biggest fan of most tabletop games, so I thought to myself what do I enjoy, this led to me thinking about air hockey...a game I thoroughly enjoyed as a kid whenever I might get to go to an arcade, etc. In my version, you and an opponent battle it off to protect your planet's atmosphere from the BIG RED BOMB trying to enter it...each player can deflect the bomb back over the border towards the opponent's atmosphere to try and score a point. Pretty simple concept! (It is designed for 2 players, can be 1 if you want ;)
 
 # About SpaceHockey
 
