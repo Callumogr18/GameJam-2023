@@ -31,11 +31,4 @@ Note: Music cannot be turned on/off if ships are moving, this is because other f
 If you want to play my game follow this process...
 Download the source code zip in releases, this has everything bundled nicely together ready for you to play with.
 
-Or...
-
-1. Install VScode on your machine
-2. In the blank workspace, paste the link of this repository into the bar at the top of the screen
-3. Get a python interpreter ready in order to run the game
-4. Have fun and ENJOY!
-
 Note: Ensure you have pygame installed on your machine
