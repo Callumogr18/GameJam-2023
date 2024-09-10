@@ -17,17 +17,17 @@ SCORE_RESET = 1000
 
 # Our images for the background, yellow and red spaceships
 BG = pygame.transform.scale(pygame.image.load(
-    os.path.join("assets", "space.png")), (WIDTH, HEIGHT))
+    os.path.join("SpaceHockey", "assets", "space.png")), (WIDTH, HEIGHT))
 YELLOW_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(pygame.image.load(
-    os.path.join("assets", "spaceship_yellow.png")), (SHIP_WIDTH, SHIP_HEIGHT)), 90)
+    os.path.join("SpaceHockey", "assets", "spaceship_yellow.png")), (SHIP_WIDTH, SHIP_HEIGHT)), 90)
 RED_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(pygame.image.load(
-    os.path.join("assets", "spaceship_red.png")), (SHIP_WIDTH, SHIP_HEIGHT)), 270)
+    os.path.join("SpaceHockey", "assets", "spaceship_red.png")), (SHIP_WIDTH, SHIP_HEIGHT)), 270)
 
 #  Setting the display height, width for the pygame window and font type and size
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("AIR HOCKEY")
 FONT = pygame.font.SysFont("Comic Sans MS", 40)
-pygame.mixer.music.load("assets/Ove Melaa Supa Powa Loop B.mp3")
+pygame.mixer.music.load("SpaceHockey/assets/Ove Melaa Supa Powa Loop B.mp3")
 
 # Colours used: White, Black, pink. Also the FPS for the pygame clock
 WHITE = (255, 255, 255)
